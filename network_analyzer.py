@@ -1,49 +1,36 @@
 import json
-import os
-import time
 from datetime import datetime, timezone
 
 from playwright.sync_api import sync_playwright
 
 
-TARGET_URL = os.environ.get(
-    "TARGET_URL",
-    "https://toffeelive.com/en"
-)
-
-HAR_FILE = "network.har"
-JSON_FILE = "network.json"
+TARGET_URL = "https://toffeelive.com/en"
 
 requests_data = []
 responses_data = []
 
 
-def now():
+def timestamp():
     return datetime.now(timezone.utc).isoformat()
 
 
 with sync_playwright() as p:
-
-    browser = p.chromium.launch(
-        headless=True
-    )
+    browser = p.chromium.launch(headless=True)
 
     context = browser.new_context(
-        record_har_path=HAR_FILE,
+        record_har_path="network.har",
         record_har_content="omit",
     )
 
     page = context.new_page()
 
-    def request_handler(request):
-        data = {
-            "time": now(),
+    def on_request(request):
+        requests_data.append({
+            "time": timestamp(),
             "method": request.method,
             "url": request.url,
             "resource_type": request.resource_type,
-        }
-
-        requests_data.append(data)
+        })
 
         print(
             f"[REQUEST] "
@@ -52,16 +39,14 @@ with sync_playwright() as p:
             f"{request.url}"
         )
 
-    def response_handler(response):
-        data = {
-            "time": now(),
+    def on_response(response):
+        responses_data.append({
+            "time": timestamp(),
             "status": response.status,
             "status_text": response.status_text,
             "url": response.url,
             "resource_type": response.request.resource_type,
-        }
-
-        responses_data.append(data)
+        })
 
         print(
             f"[RESPONSE] "
@@ -69,8 +54,8 @@ with sync_playwright() as p:
             f"{response.url}"
         )
 
-    page.on("request", request_handler)
-    page.on("response", response_handler)
+    page.on("request", on_request)
+    page.on("response", on_response)
 
     print(f"Opening: {TARGET_URL}")
 
@@ -81,33 +66,36 @@ with sync_playwright() as p:
             timeout=60000,
         )
 
-        # Allow additional network activity to finish.
+        # Wait for additional network activity.
         page.wait_for_timeout(10000)
 
-    except Exception as exc:
-        print(f"Navigation error: {exc}")
+    except Exception as e:
+        print(f"Navigation error: {e}")
 
     result = {
-        "target": TARGET_URL,
-        "captured_at": now(),
+        "target_url": TARGET_URL,
+        "captured_at": timestamp(),
+        "request_count": len(requests_data),
+        "response_count": len(responses_data),
         "requests": requests_data,
         "responses": responses_data,
     }
 
     with open(
-        JSON_FILE,
+        "network.json",
         "w",
-        encoding="utf-8"
+        encoding="utf-8",
     ) as f:
         json.dump(
             result,
             f,
             indent=2,
-            ensure_ascii=False
+            ensure_ascii=False,
         )
 
     context.close()
     browser.close()
+
 
 print()
 print("================================")
@@ -115,5 +103,5 @@ print("Network analysis completed")
 print("================================")
 print(f"Requests : {len(requests_data)}")
 print(f"Responses: {len(responses_data)}")
-print(f"HAR      : {HAR_FILE}")
-print(f"JSON     : {JSON_FILE}")
+print("Created  : network.json")
+print("Created  : network.har")
