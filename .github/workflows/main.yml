@@ -1,7 +1,12 @@
-name: Playwright Network Analyzer
+name: Playwright Network Analysis
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
 
 jobs:
   analyze:
@@ -10,6 +15,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -23,16 +30,20 @@ jobs:
           playwright install --with-deps chromium
 
       - name: Run network analyzer
-        env:
-          TARGET_URL: ${{ secrets.TARGET_URL }}
         run: |
           python network_analyzer.py
 
-      - name: Upload HAR
-        uses: actions/upload-artifact@v4
-        with:
-          name: network-analysis
-          path: |
-            network.har
-            network.json
-          retention-days: 7
+      - name: Commit and push results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add network.json network.har
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Update network analysis"
+          git push
