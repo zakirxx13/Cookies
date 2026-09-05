@@ -3,105 +3,73 @@ from datetime import datetime, timezone
 
 from playwright.sync_api import sync_playwright
 
-
 TARGET_URL = "https://toffeelive.com/en"
-
-requests_data = []
-responses_data = []
+OUTPUT_FILE = "network.json"
 
 
-def timestamp():
-    return datetime.now(timezone.utc).isoformat()
+def main():
+    edge_cookie_detected = False
 
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
 
-with sync_playwright() as p:
-    browser = p.chromium.launch(headless=True)
+        context = browser.new_context()
+        page = context.new_page()
 
-    context = browser.new_context(
-        record_har_path="network.har",
-        record_har_content="omit",
-    )
+        def check_request(request):
+            nonlocal edge_cookie_detected
 
-    page = context.new_page()
+            for name in request.headers:
+                if name.lower() == "edge-cache-cookie":
+                    edge_cookie_detected = True
+                    print("Edge-Cache-Cookie detected in request")
 
-    def on_request(request):
-        requests_data.append({
-            "time": timestamp(),
-            "method": request.method,
-            "url": request.url,
-            "resource_type": request.resource_type,
-        })
+        def check_response(response):
+            nonlocal edge_cookie_detected
 
-        print(
-            f"[REQUEST] "
-            f"{request.method} "
-            f"{request.resource_type} "
-            f"{request.url}"
-        )
+            for name in response.headers:
+                if name.lower() == "edge-cache-cookie":
+                    edge_cookie_detected = True
+                    print("Edge-Cache-Cookie detected in response")
 
-    def on_response(response):
-        responses_data.append({
-            "time": timestamp(),
-            "status": response.status,
-            "status_text": response.status_text,
-            "url": response.url,
-            "resource_type": response.request.resource_type,
-        })
+        page.on("request", check_request)
+        page.on("response", check_response)
 
-        print(
-            f"[RESPONSE] "
-            f"{response.status} "
-            f"{response.url}"
-        )
+        print(f"Opening: {TARGET_URL}")
 
-    page.on("request", on_request)
-    page.on("response", on_response)
+        try:
+            page.goto(
+                TARGET_URL,
+                wait_until="domcontentloaded",
+                timeout=60000
+            )
+        except Exception as e:
+            print(f"Navigation warning: {e}")
 
-    print(f"Opening: {TARGET_URL}")
-
-    try:
-        page.goto(
-            TARGET_URL,
-            wait_until="domcontentloaded",
-            timeout=60000,
-        )
-
-        # Wait for additional network activity.
+        # Wait for client-side requests/cookies.
         page.wait_for_timeout(10000)
 
-    except Exception as e:
-        print(f"Navigation error: {e}")
+        context.close()
+        browser.close()
 
     result = {
-        "target_url": TARGET_URL,
-        "captured_at": timestamp(),
-        "request_count": len(requests_data),
-        "response_count": len(responses_data),
-        "requests": requests_data,
-        "responses": responses_data,
+        "Edge-Cache-Cookie": (
+            "[REDACTED]"
+            if edge_cookie_detected
+            else None
+        )
     }
 
-    with open(
-        "network.json",
-        "w",
-        encoding="utf-8",
-    ) as f:
-        json.dump(
-            result,
-            f,
-            indent=2,
-            ensure_ascii=False,
-        )
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(result, f, indent=2)
 
-    context.close()
-    browser.close()
+    print(f"Saved {OUTPUT_FILE}")
+
+    if edge_cookie_detected:
+        print("Edge-Cache-Cookie: [REDACTED]")
+    else:
+        print("Edge-Cache-Cookie not detected.")
 
 
-print()
-print("================================")
-print("Network analysis completed")
-print("================================")
-print(f"Requests : {len(requests_data)}")
-print(f"Responses: {len(responses_data)}")
-print("Created  : network.json")
-print("Created  : network.har")
+if __name__ == "__main__":
+    main()
