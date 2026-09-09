@@ -3,7 +3,7 @@ from datetime import datetime, timezone
 
 from playwright.sync_api import sync_playwright
 
-TARGET_URL = "https://toffeelive.com/en"
+TARGET_URL = "https://toffeelive.com/en/watch/Xi_Ga5oBNnOkwJLWkhKP"
 OUTPUT_FILE = "network.json"
 
 
