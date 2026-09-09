@@ -10,13 +10,19 @@ on:
         required: true
         default: 'https://toffeelive.com/en/watch/Xi_Ga5oBNnOkwJLWkhKP'
 
+permissions:
+  contents: write  # Repository লিখার অনুমতি
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v4
-    
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}  # Push করার জন্য token
+        
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
@@ -29,22 +35,50 @@ jobs:
         
     - name: Run Scraper
       run: python scraper.py
-      env:
-        WATCH_URL: ${{ github.event.inputs.watch_url || 'https://toffeelive.com/en/watch/Xi_Ga5oBNnOkwJLWkhKP' }}
         
-    - name: Upload Results
+    - name: Check for changes
+      id: check_changes
+      run: |
+        git add -A
+        if git diff --staged --quiet; then
+          echo "changed=false" >> $GITHUB_OUTPUT
+          echo "কোনো পরিবর্তন নেই"
+        else
+          echo "changed=true" >> $GITHUB_OUTPUT
+          echo "নতুন ডেটা পাওয়া গেছে!"
+        fi
+        
+    - name: Commit and Push results
+      if: steps.check_changes.outputs.changed == 'true'
+      run: |
+        git config --global user.name "GitHub Actions Bot"
+        git config --global user.email "actions@github.com"
+        git commit -m "🍪 Update Signed URL Cookies - $(date '+%Y-%m-%d %H:%M:%S UTC')
+        
+        - Scraped at: $(date -u '+%Y-%m-%d %H:%M:%S')
+        - Source: ${{ github.event.inputs.watch_url || 'https://toffeelive.com/en/watch/Xi_Ga5oBNnOkwJLWkhKP' }}
+        - Workflow Run: ${{ github.run_id }}"
+        git push
+        
+    - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: signed-url-cookies
+        name: cookie-results-${{ github.run_id }}
         path: |
           signed_url_cookies.json
           signed_url_cookies_raw.txt
           full_scrape_report.json
-          
-    - name: Commit to Repository
+        retention-days: 30
+        
+    - name: Summary
       run: |
-        git config user.name "GitHub Action"
-        git config user.email "action@github.com"
-        git add -A
-        git commit -m "Update signed URL cookies - $(date)" || exit 0
-        git push || exit 0
+        echo "## স্ক্রেপিং সম্পূর্ণ হয়েছে! 🎉" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "- **সময়**: $(date '+%Y-%m-%d %H:%M:%S')" >> $GITHUB_STEP_SUMMARY
+        echo "- **Branch**: ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        if [ "${{ steps.check_changes.outputs.changed }}" == "true" ]; then
+          echo "✅ নতুন কুকি সেভ এবং কমিট করা হয়েছে" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "⚠️ কোনো নতুন কুকি পাওয়া যায়নি" >> $GITHUB_STEP_SUMMARY
+        fi
