@@ -1,0 +1,57 @@
+name: Edge Cache Cookie Scraper
+
+on:
+  schedule:
+    # প্রতি ৬ ঘন্টায় রান করবে
+    - cron: '0 */6 * * *'
+  workflow_dispatch:  # ম্যানুয়াল ট্রিগার
+  push:
+    branches: [ main ]
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        
+    - name: Cache pip dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+          
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install playwright asyncio
+        playwright install chromium
+        
+    - name: Run scraper
+      run: |
+        python scraper.py
+        
+    - name: Upload results
+      uses: actions/upload-artifact@v4
+      with:
+        name: edge-cache-data
+        path: |
+          edge_cache_data.json
+          edge_cache_cookies.json
+        retention-days: 30
+        
+    - name: Commit results to repository
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -A
+        git commit -m "Update edge cache data - $(date)" || exit 0
+        git push || exit 0
