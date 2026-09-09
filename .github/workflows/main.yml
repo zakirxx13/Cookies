@@ -1,57 +1,50 @@
-name: Edge Cache Cookie Scraper
+name: Toffee Signed URL Cookie Scraper
 
 on:
   schedule:
-    # প্রতি ৬ ঘন্টায় রান করবে
-    - cron: '0 */6 * * *'
-  workflow_dispatch:  # ম্যানুয়াল ট্রিগার
-  push:
-    branches: [ main ]
+    - cron: '0 */2 * * *'  # প্রতি ২ ঘন্টায়
+  workflow_dispatch:
+    inputs:
+      watch_url:
+        description: 'Watch URL'
+        required: true
+        default: 'https://toffeelive.com/en/watch/Xi_Ga5oBNnOkwJLWkhKP'
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
     
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
-      
+    - uses: actions/checkout@v4
+    
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
         
-    - name: Cache pip dependencies
-      uses: actions/cache@v3
-      with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
-        restore-keys: |
-          ${{ runner.os }}-pip-
-          
-    - name: Install dependencies
+    - name: Install Playwright
       run: |
-        python -m pip install --upgrade pip
-        pip install playwright asyncio
+        pip install playwright
         playwright install chromium
         
-    - name: Run scraper
-      run: |
-        python scraper.py
+    - name: Run Scraper
+      run: python scraper.py
+      env:
+        WATCH_URL: ${{ github.event.inputs.watch_url || 'https://toffeelive.com/en/watch/Xi_Ga5oBNnOkwJLWkhKP' }}
         
-    - name: Upload results
+    - name: Upload Results
       uses: actions/upload-artifact@v4
       with:
-        name: edge-cache-data
+        name: signed-url-cookies
         path: |
-          edge_cache_data.json
-          edge_cache_cookies.json
-        retention-days: 30
-        
-    - name: Commit results to repository
+          signed_url_cookies.json
+          signed_url_cookies_raw.txt
+          full_scrape_report.json
+          
+    - name: Commit to Repository
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+        git config user.name "GitHub Action"
+        git config user.email "action@github.com"
         git add -A
-        git commit -m "Update edge cache data - $(date)" || exit 0
+        git commit -m "Update signed URL cookies - $(date)" || exit 0
         git push || exit 0
