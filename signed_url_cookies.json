@@ -1,14 +1,14 @@
 [
   {
     "source_url": "document.cookie",
-    "raw_cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1789628853:KeyName=prod_linear:Signature=HaM_pGGrh0HF-xm4qFxPW8jsy62wFF9G7Szdl6bI_E91bFuEucirGXl0157TpB7uthRn1FDPzGc05NzFZQSvAw",
+    "raw_cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1789649730:KeyName=prod_linear:Signature=Pl7jZrXbtjTRHwZ7aXPqQVJy1_C6EbG2nAwlxfcLRsBDEqkUFEeXUE2JSAEM9mOo27SFkuTFJ30vdPoDqvIqAA",
     "parsed": {
       "URLPrefix": "https://bldcmprod-cdn.toffeelive.com",
       "URLPrefix_Base64": "aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t",
-      "Expires": 1789628853,
-      "Expires_ISO": "2026-09-17T07:07:33",
+      "Expires": 1789649730,
+      "Expires_ISO": "2026-09-17T12:55:30",
       "KeyName": "prod_linear",
-      "Signature": "HaM_pGGrh0HF-xm4qFxPW8jsy62wFF9G7Szdl6bI_E91bFuEucirGXl0157TpB7uthRn1FDPzGc05NzFZQSvAw"
+      "Signature": "Pl7jZrXbtjTRHwZ7aXPqQVJy1_C6EbG2nAwlxfcLRsBDEqkUFEeXUE2JSAEM9mOo27SFkuTFJ30vdPoDqvIqAA"
     }
   }
 ]
