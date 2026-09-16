@@ -1,17 +1,17 @@
 {
   "watch_url": "https://toffeelive.com/en/watch/Xi_Ga5oBNnOkwJLWkhKP",
-  "scraped_at": "2026-09-16T01:50:03.424033",
+  "scraped_at": "2026-09-16T06:53:58.856594",
   "signed_url_cookies": [
     {
       "source_url": "document.cookie",
-      "raw_cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1789696179:KeyName=prod_linear:Signature=78Dy6dipIJRjPyii4nqiaUeiOY8xL1QSFqvQYqvxE9kc793xJkBMBkxkZZa9KINjnxk2mPuV7n4CDiexIepvBw",
+      "raw_cookie": "Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1789714414:KeyName=prod_linear:Signature=_SuCseciQ7GbKenogbqMna0uozmNjizxuxnD3qi-BCe1L8FKXzCtjnjtTk9XVBrwTpOC9SZ0juBPhgMzCUVQDA",
       "parsed": {
         "URLPrefix": "https://bldcmprod-cdn.toffeelive.com",
         "URLPrefix_Base64": "aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t",
-        "Expires": 1789696179,
-        "Expires_ISO": "2026-09-18T01:49:39",
+        "Expires": 1789714414,
+        "Expires_ISO": "2026-09-18T06:53:34",
         "KeyName": "prod_linear",
-        "Signature": "78Dy6dipIJRjPyii4nqiaUeiOY8xL1QSFqvQYqvxE9kc793xJkBMBkxkZZa9KINjnxk2mPuV7n4CDiexIepvBw"
+        "Signature": "_SuCseciQ7GbKenogbqMna0uozmNjizxuxnD3qi-BCe1L8FKXzCtjnjtTk9XVBrwTpOC9SZ0juBPhgMzCUVQDA"
       }
     }
   ],
@@ -48,17 +48,17 @@
     },
     {
       "name": "device_id",
-      "value": "21aec546-12c7-4a68-a29d-ab07128f590d",
+      "value": "c2e5a77d-6477-4cef-a11f-0414b0e15cf6",
       "domain": "toffeelive.com",
       "path": "/",
-      "expires": 1824083375.740083,
+      "expires": 1824101610.025888,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "device_token",
-      "value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3RvZmZlZWxpdmUuY29tIiwiY291bnRyeSI6IlVTIiwiZF9pZCI6ImE5NzExMTZhLThlZTgtNDczOS1hMDdlLTRkZGMzMGM0NzA3MCIsImV4cCI6MTc5MjE1MzE3NSwiaWF0IjoxNzg5NTIzMzc1LCJpc3MiOiJ0b2ZmZWVsaXZlLmNvbSIsImp0aSI6IjliODA2ZTNmLTFlMjEtNGJlOC04YmEzLTJhNDFmZjY4NzM3MV8xNzg5NTIzMzc1IiwicHJvdmlkZXIiOiJ0b2ZmZWUiLCJyX2lkIjoiYTk3MTExNmEtOGVlOC00NzM5LWEwN2UtNGRkYzMwYzQ3MDcwIiwic19pZCI6ImE5NzExMTZhLThlZTgtNDczOS1hMDdlLTRkZGMzMGM0NzA3MCIsInRva2VuIjoiYWNjZXNzIiwidHlwZSI6ImRldmljZSJ9.ey4nE9KZPDHp6IPUWT03AMuE8Nt4u4Mz1NdMipXd2TGFxjd3TkJ1AOIZ5FOj5hCHIyLA8_0wrvDHktEELA-KaQ",
+      "value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3RvZmZlZWxpdmUuY29tIiwiY291bnRyeSI6IlVTIiwiZF9pZCI6Ijg4YjgzMGE4LTY5ZjctNDFlZi1hNWFmLTNkYzQ2YWZjNjA2YiIsImV4cCI6MTc5MjE3MTQwOSwiaWF0IjoxNzg5NTQxNjA5LCJpc3MiOiJ0b2ZmZWVsaXZlLmNvbSIsImp0aSI6IjI3OTUxMTEyLTFlZGYtNDBjYS1iNzgzLWZkMWJjMmY2MGU1Yl8xNzg5NTQxNjA5IiwicHJvdmlkZXIiOiJ0b2ZmZWUiLCJyX2lkIjoiODhiODMwYTgtNjlmNy00MWVmLWE1YWYtM2RjNDZhZmM2MDZiIiwic19pZCI6Ijg4YjgzMGE4LTY5ZjctNDFlZi1hNWFmLTNkYzQ2YWZjNjA2YiIsInRva2VuIjoiYWNjZXNzIiwidHlwZSI6ImRldmljZSJ9.VwnhMug5nKmQ6Z-r85P5I_sagStmBXSQMMiZUmB02KrFca2a4JEly1m8s3kN86YscbexAkubz8ETHc7imb_r4g",
       "domain": "toffeelive.com",
       "path": "/",
       "expires": -1,
@@ -68,7 +68,7 @@
     },
     {
       "name": "device_refresh_token",
-      "value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3RvZmZlZWxpdmUuY29tIiwiY291bnRyeSI6IlVTIiwiZF9pZCI6ImE5NzExMTZhLThlZTgtNDczOS1hMDdlLTRkZGMzMGM0NzA3MCIsImV4cCI6MTgwNTMwMjE3NSwiaWF0IjoxNzg5NTIzMzc1LCJpc3MiOiJ0b2ZmZWVsaXZlLmNvbSIsImp0aSI6IjliODA2ZTNmLTFlMjEtNGJlOC04YmEzLTJhNDFmZjY4NzM3MV8xNzg5NTIzMzc1IiwicHJvdmlkZXIiOiJ0b2ZmZWUiLCJyX2lkIjoiYTk3MTExNmEtOGVlOC00NzM5LWEwN2UtNGRkYzMwYzQ3MDcwIiwic19pZCI6ImE5NzExMTZhLThlZTgtNDczOS1hMDdlLTRkZGMzMGM0NzA3MCIsInRva2VuIjoicmVmcmVzaCIsInR5cGUiOiJkZXZpY2UifQ.RDhJEy5IbUK5VNxa7NArfJ5aPjkr4PKctFOdiEk83t2pP6fqva_U1zlVyxJ1hcrHmvGhvvUrwmIsAncUCI_GCw",
+      "value": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3RvZmZlZWxpdmUuY29tIiwiY291bnRyeSI6IlVTIiwiZF9pZCI6Ijg4YjgzMGE4LTY5ZjctNDFlZi1hNWFmLTNkYzQ2YWZjNjA2YiIsImV4cCI6MTgwNTMyMDQwOSwiaWF0IjoxNzg5NTQxNjA5LCJpc3MiOiJ0b2ZmZWVsaXZlLmNvbSIsImp0aSI6IjI3OTUxMTEyLTFlZGYtNDBjYS1iNzgzLWZkMWJjMmY2MGU1Yl8xNzg5NTQxNjA5IiwicHJvdmlkZXIiOiJ0b2ZmZWUiLCJyX2lkIjoiODhiODMwYTgtNjlmNy00MWVmLWE1YWYtM2RjNDZhZmM2MDZiIiwic19pZCI6Ijg4YjgzMGE4LTY5ZjctNDFlZi1hNWFmLTNkYzQ2YWZjNjA2YiIsInRva2VuIjoicmVmcmVzaCIsInR5cGUiOiJkZXZpY2UifQ.q648PizldzyXxBYpv3V5-1Yq7uPI3aALg_T7yCY1hz3fpp9dzSO-wb8n71LNZcygfnfLwoe8n9bKXeyQd_xd_w",
       "domain": "toffeelive.com",
       "path": "/",
       "expires": -1,
@@ -78,87 +78,87 @@
     },
     {
       "name": "_fbp",
-      "value": "fb.1.1789523376393.839100405458851506",
+      "value": "fb.1.1789541611259.44335794897207424",
       "domain": ".toffeelive.com",
       "path": "/",
-      "expires": 1797299378,
+      "expires": 1797317613,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "fr",
-      "value": "0596JKmJthl41TLDM..BqqfWw...1.0.BqqfWw.AWeAfS4GK2kzSY3lpb0aBNJ9qZM",
+      "value": "0u5p0GwCR8rtirRhO..Bqqjzr...1.0.Bqqjzr.AWfEA4DCcSdJEX9B_GbUA1i39Ag",
       "domain": ".facebook.com",
       "path": "/",
-      "expires": 1797299376.492288,
+      "expires": 1797317611.355838,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "mp_6019860d585d6c9cc82edba9d456e36c_mixpanel",
-      "value": "%7B%22distinct_id%22%3A%22%24device%3A9b4f8503-2453-46ef-81d9-ce567e6aa356%22%2C%22%24device_id%22%3A%229b4f8503-2453-46ef-81d9-ce567e6aa356%22%2C%22%24initial_referrer%22%3A%22https%3A%2F%2Ftoffeelive.com%2F%22%2C%22%24initial_referring_domain%22%3A%22toffeelive.com%22%2C%22__mps%22%3A%7B%7D%2C%22__mpso%22%3A%7B%22%24initial_referrer%22%3A%22https%3A%2F%2Ftoffeelive.com%2F%22%2C%22%24initial_referring_domain%22%3A%22toffeelive.com%22%7D%2C%22__mpus%22%3A%7B%7D%2C%22__mpa%22%3A%7B%7D%2C%22__mpu%22%3A%7B%7D%2C%22__mpr%22%3A%5B%5D%2C%22__mpap%22%3A%5B%5D%7D",
+      "value": "%7B%22distinct_id%22%3A%22%24device%3A336c5147-86e7-45f5-921c-02aff14580f9%22%2C%22%24device_id%22%3A%22336c5147-86e7-45f5-921c-02aff14580f9%22%2C%22%24initial_referrer%22%3A%22https%3A%2F%2Ftoffeelive.com%2F%22%2C%22%24initial_referring_domain%22%3A%22toffeelive.com%22%2C%22__mps%22%3A%7B%7D%2C%22__mpso%22%3A%7B%22%24initial_referrer%22%3A%22https%3A%2F%2Ftoffeelive.com%2F%22%2C%22%24initial_referring_domain%22%3A%22toffeelive.com%22%7D%2C%22__mpus%22%3A%7B%7D%2C%22__mpa%22%3A%7B%7D%2C%22__mpu%22%3A%7B%7D%2C%22__mpr%22%3A%5B%5D%2C%22__mpap%22%3A%5B%5D%7D",
       "domain": ".toffeelive.com",
       "path": "/",
-      "expires": 1821059378,
+      "expires": 1821077613,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "WZRK_G",
-      "value": "76a027960ae34e049e359b2f701ad254",
+      "value": "8601acbc4158451c90e80c66609aae97",
       "domain": ".toffeelive.com",
       "path": "/",
-      "expires": 1821059377,
+      "expires": 1821077612,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "WZRK_S_R57-668-777Z",
-      "value": "%7B%22p%22%3A1%2C%22s%22%3A1789523377%2C%22t%22%3A1789523378%7D",
+      "value": "%7B%22p%22%3A1%2C%22s%22%3A1789541612%2C%22t%22%3A1789541613%7D",
       "domain": ".toffeelive.com",
       "path": "/",
-      "expires": 1789524578,
+      "expires": 1789542813,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_gcl_au",
-      "value": "1.1.997729411.1789523379",
+      "value": "1.1.70865220.1789541614",
       "domain": ".toffeelive.com",
       "path": "/",
-      "expires": 1797299378,
+      "expires": 1797317614,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga",
-      "value": "GA1.1.1906174061.1789523379",
+      "value": "GA1.1.1650367081.1789541614",
       "domain": ".toffeelive.com",
       "path": "/",
-      "expires": 1824083378.806557,
+      "expires": 1824101614.14546,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "_ga_02M4D9SN5F",
-      "value": "GS2.1.s1789523378$o1$g0$t1789523378$j60$l0$h1677207709",
+      "value": "GS2.1.s1789541614$o1$g0$t1789541614$j60$l0$h1971756583",
       "domain": ".toffeelive.com",
       "path": "/",
-      "expires": 1824083378.816833,
+      "expires": 1824101614.153837,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "Edge-Cache-Cookie",
-      "value": "URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1789696179:KeyName=prod_linear:Signature=78Dy6dipIJRjPyii4nqiaUeiOY8xL1QSFqvQYqvxE9kc793xJkBMBkxkZZa9KINjnxk2mPuV7n4CDiexIepvBw",
+      "value": "URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1789714414:KeyName=prod_linear:Signature=_SuCseciQ7GbKenogbqMna0uozmNjizxuxnD3qi-BCe1L8FKXzCtjnjtTk9XVBrwTpOC9SZ0juBPhgMzCUVQDA",
       "domain": ".toffeelive.com",
       "path": "/",
       "expires": -1,
@@ -167,70 +167,51 @@
       "sameSite": "None"
     }
   ],
-  "document_cookie": "country=US; state=DHK; allowed_countries=BD; device_id=21aec546-12c7-4a68-a29d-ab07128f590d; device_token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3RvZmZlZWxpdmUuY29tIiwiY291bnRyeSI6IlVTIiwiZF9pZCI6ImE5NzExMTZhLThlZTgtNDczOS1hMDdlLTRkZGMzMGM0NzA3MCIsImV4cCI6MTc5MjE1MzE3NSwiaWF0IjoxNzg5NTIzMzc1LCJpc3MiOiJ0b2ZmZWVsaXZlLmNvbSIsImp0aSI6IjliODA2ZTNmLTFlMjEtNGJlOC04YmEzLTJhNDFmZjY4NzM3MV8xNzg5NTIzMzc1IiwicHJvdmlkZXIiOiJ0b2ZmZWUiLCJyX2lkIjoiYTk3MTExNmEtOGVlOC00NzM5LWEwN2UtNGRkYzMwYzQ3MDcwIiwic19pZCI6ImE5NzExMTZhLThlZTgtNDczOS1hMDdlLTRkZGMzMGM0NzA3MCIsInRva2VuIjoiYWNjZXNzIiwidHlwZSI6ImRldmljZSJ9.ey4nE9KZPDHp6IPUWT03AMuE8Nt4u4Mz1NdMipXd2TGFxjd3TkJ1AOIZ5FOj5hCHIyLA8_0wrvDHktEELA-KaQ; device_refresh_token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3RvZmZlZWxpdmUuY29tIiwiY291bnRyeSI6IlVTIiwiZF9pZCI6ImE5NzExMTZhLThlZTgtNDczOS1hMDdlLTRkZGMzMGM0NzA3MCIsImV4cCI6MTgwNTMwMjE3NSwiaWF0IjoxNzg5NTIzMzc1LCJpc3MiOiJ0b2ZmZWVsaXZlLmNvbSIsImp0aSI6IjliODA2ZTNmLTFlMjEtNGJlOC04YmEzLTJhNDFmZjY4NzM3MV8xNzg5NTIzMzc1IiwicHJvdmlkZXIiOiJ0b2ZmZWUiLCJyX2lkIjoiYTk3MTExNmEtOGVlOC00NzM5LWEwN2UtNGRkYzMwYzQ3MDcwIiwic19pZCI6ImE5NzExMTZhLThlZTgtNDczOS1hMDdlLTRkZGMzMGM0NzA3MCIsInRva2VuIjoicmVmcmVzaCIsInR5cGUiOiJkZXZpY2UifQ.RDhJEy5IbUK5VNxa7NArfJ5aPjkr4PKctFOdiEk83t2pP6fqva_U1zlVyxJ1hcrHmvGhvvUrwmIsAncUCI_GCw; _fbp=fb.1.1789523376393.839100405458851506; mp_6019860d585d6c9cc82edba9d456e36c_mixpanel=%7B%22distinct_id%22%3A%22%24device%3A9b4f8503-2453-46ef-81d9-ce567e6aa356%22%2C%22%24device_id%22%3A%229b4f8503-2453-46ef-81d9-ce567e6aa356%22%2C%22%24initial_referrer%22%3A%22https%3A%2F%2Ftoffeelive.com%2F%22%2C%22%24initial_referring_domain%22%3A%22toffeelive.com%22%2C%22__mps%22%3A%7B%7D%2C%22__mpso%22%3A%7B%22%24initial_referrer%22%3A%22https%3A%2F%2Ftoffeelive.com%2F%22%2C%22%24initial_referring_domain%22%3A%22toffeelive.com%22%7D%2C%22__mpus%22%3A%7B%7D%2C%22__mpa%22%3A%7B%7D%2C%22__mpu%22%3A%7B%7D%2C%22__mpr%22%3A%5B%5D%2C%22__mpap%22%3A%5B%5D%7D; WZRK_G=76a027960ae34e049e359b2f701ad254; WZRK_S_R57-668-777Z=%7B%22p%22%3A1%2C%22s%22%3A1789523377%2C%22t%22%3A1789523378%7D; _gcl_au=1.1.997729411.1789523379; _ga=GA1.1.1906174061.1789523379; _ga_02M4D9SN5F=GS2.1.s1789523378$o1$g0$t1789523378$j60$l0$h1677207709; Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1789696179:KeyName=prod_linear:Signature=78Dy6dipIJRjPyii4nqiaUeiOY8xL1QSFqvQYqvxE9kc793xJkBMBkxkZZa9KINjnxk2mPuV7n4CDiexIepvBw",
+  "document_cookie": "country=US; state=DHK; allowed_countries=BD; device_id=c2e5a77d-6477-4cef-a11f-0414b0e15cf6; device_token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3RvZmZlZWxpdmUuY29tIiwiY291bnRyeSI6IlVTIiwiZF9pZCI6Ijg4YjgzMGE4LTY5ZjctNDFlZi1hNWFmLTNkYzQ2YWZjNjA2YiIsImV4cCI6MTc5MjE3MTQwOSwiaWF0IjoxNzg5NTQxNjA5LCJpc3MiOiJ0b2ZmZWVsaXZlLmNvbSIsImp0aSI6IjI3OTUxMTEyLTFlZGYtNDBjYS1iNzgzLWZkMWJjMmY2MGU1Yl8xNzg5NTQxNjA5IiwicHJvdmlkZXIiOiJ0b2ZmZWUiLCJyX2lkIjoiODhiODMwYTgtNjlmNy00MWVmLWE1YWYtM2RjNDZhZmM2MDZiIiwic19pZCI6Ijg4YjgzMGE4LTY5ZjctNDFlZi1hNWFmLTNkYzQ2YWZjNjA2YiIsInRva2VuIjoiYWNjZXNzIiwidHlwZSI6ImRldmljZSJ9.VwnhMug5nKmQ6Z-r85P5I_sagStmBXSQMMiZUmB02KrFca2a4JEly1m8s3kN86YscbexAkubz8ETHc7imb_r4g; device_refresh_token=eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL3RvZmZlZWxpdmUuY29tIiwiY291bnRyeSI6IlVTIiwiZF9pZCI6Ijg4YjgzMGE4LTY5ZjctNDFlZi1hNWFmLTNkYzQ2YWZjNjA2YiIsImV4cCI6MTgwNTMyMDQwOSwiaWF0IjoxNzg5NTQxNjA5LCJpc3MiOiJ0b2ZmZWVsaXZlLmNvbSIsImp0aSI6IjI3OTUxMTEyLTFlZGYtNDBjYS1iNzgzLWZkMWJjMmY2MGU1Yl8xNzg5NTQxNjA5IiwicHJvdmlkZXIiOiJ0b2ZmZWUiLCJyX2lkIjoiODhiODMwYTgtNjlmNy00MWVmLWE1YWYtM2RjNDZhZmM2MDZiIiwic19pZCI6Ijg4YjgzMGE4LTY5ZjctNDFlZi1hNWFmLTNkYzQ2YWZjNjA2YiIsInRva2VuIjoicmVmcmVzaCIsInR5cGUiOiJkZXZpY2UifQ.q648PizldzyXxBYpv3V5-1Yq7uPI3aALg_T7yCY1hz3fpp9dzSO-wb8n71LNZcygfnfLwoe8n9bKXeyQd_xd_w; _fbp=fb.1.1789541611259.44335794897207424; mp_6019860d585d6c9cc82edba9d456e36c_mixpanel=%7B%22distinct_id%22%3A%22%24device%3A336c5147-86e7-45f5-921c-02aff14580f9%22%2C%22%24device_id%22%3A%22336c5147-86e7-45f5-921c-02aff14580f9%22%2C%22%24initial_referrer%22%3A%22https%3A%2F%2Ftoffeelive.com%2F%22%2C%22%24initial_referring_domain%22%3A%22toffeelive.com%22%2C%22__mps%22%3A%7B%7D%2C%22__mpso%22%3A%7B%22%24initial_referrer%22%3A%22https%3A%2F%2Ftoffeelive.com%2F%22%2C%22%24initial_referring_domain%22%3A%22toffeelive.com%22%7D%2C%22__mpus%22%3A%7B%7D%2C%22__mpa%22%3A%7B%7D%2C%22__mpu%22%3A%7B%7D%2C%22__mpr%22%3A%5B%5D%2C%22__mpap%22%3A%5B%5D%7D; WZRK_G=8601acbc4158451c90e80c66609aae97; WZRK_S_R57-668-777Z=%7B%22p%22%3A1%2C%22s%22%3A1789541612%2C%22t%22%3A1789541613%7D; _gcl_au=1.1.70865220.1789541614; _ga=GA1.1.1650367081.1789541614; _ga_02M4D9SN5F=GS2.1.s1789541614$o1$g0$t1789541614$j60$l0$h1971756583; Edge-Cache-Cookie=URLPrefix=aHR0cHM6Ly9ibGRjbXByb2QtY2RuLnRvZmZlZWxpdmUuY29t:Expires=1789714414:KeyName=prod_linear:Signature=_SuCseciQ7GbKenogbqMna0uozmNjizxuxnD3qi-BCe1L8FKXzCtjnjtTk9XVBrwTpOC9SZ0juBPhgMzCUVQDA",
   "cdn_requests": [
     {
       "url": "https://toffeelive.com/_next/static/media/ca31d6821328a4e9-s.p.2svk7cnw5x6df.woff2",
       "status": 200,
       "set_cookie": "",
-      "timestamp": "2026-09-16T01:49:36.047185",
+      "timestamp": "2026-09-16T06:53:30.402592",
       "all_headers": {
         "accept-ranges": "bytes",
         "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
         "cache-control": "public, max-age=31536000, immutable",
         "content-length": "39692",
         "content-type": "font/woff2",
-        "date": "Wed, 16 Sep 2026 01:49:35 GMT",
+        "date": "Wed, 16 Sep 2026 06:53:30 GMT",
         "etag": "W/\"9b0c-1a085dd25d0\"",
         "last-modified": "Wed, 09 Sep 2026 11:10:58 GMT",
         "server": "Google Frontend",
         "via": "1.1 google",
-        "x-cloud-trace-context": "3cd34a9f0420b0e9a6df54976ea899f4"
-      }
-    },
-    {
-      "url": "https://www.facebook.com/tr/?id=1059227357980993&ev=PageView&dl=https%3A%2F%2Ftoffeelive.com%2Fen%2Fwatch%2FXi_Ga5oBNnOkwJLWkhKP&rl=https%3A%2F%2Ftoffeelive.com%2F&if=false&ts=1789523376403&iw=false&sw=1920&sh=1080&v=2.9.401&r=stable&ec=0&o=12318&aems=0%3B0&fbp=fb.1.1789523376393.839100405458851506&eid=ob3_plugin-set_db718956346078147c182940d0f0cfdfdcbfcd5cad2bde8f8a4efcfac107492d&cs_est=true&pmd[title]=Somoy%20TV&pmd[locale]=en&pmd[description]=Somoy%20TV%2C%20Bangladeshi%20and%20International%20News%2C%20Latest%20News%2C%20News%20Today&pmd[keywords]=sports%2C%20movies%2C%20web%20series%2C%20drama%2C%20online%20streaming&plt=1742.8999999999942&iss=1&imft=1&tz=0&it=1789523376274&coo=false&cf=1&expv2[0]=pl1&expv2[1]=el2&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct3&expv2[6]=hf1&expv2[7]=sd1&expv2[8]=sp1&expv2[9]=ek1&expv2[10]=pc1&expv2[11]=gs1&expv2[12]=zs1&expv2[13]=cp1&expv2[14]=es1&expv2[15]=ac1&expv2[16]=so1&expv2[17]=wc1&expv2[18]=la1&expv2[19]=sf1&expv2[20]=da1&expv2[21]=io1&expv2[22]=ae1&expv2[23]=sx1&expv2[24]=if1&expv2[25]=fd1&expv2[26]=bg1&expv2[27]=mg1&expv2[28]=kl1&expv2[29]=sg1&expv2[30]=mk1&expv2[31]=sn1&expv2[32]=ec1&expv2[33]=mp1&expv2[34]=ps1&expv2[35]=fx1&expv2[36]=vt1&expv2[37]=dp1&expv2[38]=fw1&expv2[39]=cn1&expv2[40]=tz1&expv2[41]=pe1&expv2[42]=ee1&expv2[43]=bu1&expv2[44]=ta1&expv2[45]=ot1&rqm=GET",
-      "status": 200,
-      "set_cookie": "fr=0596JKmJthl41TLDM..BqqfWw...1.0.BqqfWw.AWeAfS4GK2kzSY3lpb0aBNJ9qZM; expires=Tuesday, 15-Dec-2026 01:49:36 GMT; path=/; domain=.facebook.com; SameSite=None; HttpOnly; secure",
-      "timestamp": "2026-09-16T01:49:36.494655",
-      "all_headers": {
-        "access-control-allow-credentials": "true",
-        "access-control-allow-origin": "https://toffeelive.com",
-        "alt-svc": "h3=\":443\"; ma=86400",
-        "content-length": "0",
-        "content-type": "text/plain",
-        "cross-origin-resource-policy": "cross-origin",
-        "date": "Wed, 16 Sep 2026 01:49:36 GMT",
-        "server": "proxygen-bolt",
-        "set-cookie": "fr=0596JKmJthl41TLDM..BqqfWw...1.0.BqqfWw.AWeAfS4GK2kzSY3lpb0aBNJ9qZM; expires=Tuesday, 15-Dec-2026 01:49:36 GMT; path=/; domain=.facebook.com; SameSite=None; HttpOnly; secure",
-        "strict-transport-security": "max-age=31536000; includeSubDomains",
-        "x-fb-connection-quality": "EXCELLENT; q=0.9, rtt=16, rtx=0, c=10, mss=1380, tbw=4547, tp=-1, tpl=-1, uplat=0, ullat=0"
+        "x-cloud-trace-context": "f74ea285edef348c5452a369d0f972c2"
       }
     },
     {
       "url": "https://toffeelive.com/_next/static/media/6ea8d1bb8ea4af7a-s.p.1kk_wfe381bov.woff2",
       "status": 200,
       "set_cookie": "",
-      "timestamp": "2026-09-16T01:49:36.875616",
+      "timestamp": "2026-09-16T06:53:30.594598",
       "all_headers": {
         "accept-ranges": "bytes",
         "alt-svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
         "cache-control": "public, max-age=31536000, immutable",
         "content-length": "107884",
         "content-type": "font/woff2",
-        "date": "Wed, 16 Sep 2026 01:49:36 GMT",
+        "date": "Wed, 16 Sep 2026 06:53:30 GMT",
         "etag": "W/\"1a56c-1a085dd25d0\"",
         "last-modified": "Wed, 09 Sep 2026 11:10:58 GMT",
         "server": "Google Frontend",
         "via": "1.1 google",
-        "x-cloud-trace-context": "95a5a876a3b3e6fca6df54976ea89521"
+        "x-cloud-trace-context": "ad3ebdba55d0055f5452a369d0f973e3"
       }
     },
     {
-      "url": "https://www.facebook.com/tr/?id=1059227357980993&ev=page_viewed&dl=https%3A%2F%2Ftoffeelive.com%2Fen%2Fwatch%2FXi_Ga5oBNnOkwJLWkhKP&rl=https%3A%2F%2Ftoffeelive.com%2F&if=false&ts=1789523378417&iw=false&cd[provider_id]=toffee&cd[app_name]=toffee-web-app&cd[app_version]=5.1.0&cd[device_id]=21aec546-12c7-4a68-a29d-ab07128f590d&cd[subscriber_type]=ANONYMOUS&cd[connection]=cellular&cd[page_name]=Watch%20Details&cd[page_title]=Somoy%20TV&cd[page_path]=%2Fwatch%2FXi_Ga5oBNnOkwJLWkhKP&cd[page_url]=https%3A%2F%2Ftoffeelive.com%2Fwatch%2FXi_Ga5oBNnOkwJLWkhKP&cd[language]=en&cd[referrer]=https%3A%2F%2Ftoffeelive.com%2F&cd[page_id]=Xi_Ga5oBNnOkwJLWkhKP&sw=1920&sh=1080&v=2.9.401&r=stable&ec=1&o=12318&aems=0%3B0&fbp=fb.1.1789523376393.839100405458851506&eid=ob3_plugin-set_9952841548aae37a72aac30a49b9c944fa50a2b58ff2b125ff2f492b3e156246&pmd[locale]=en&pmd[description]=Somoy%20TV%2C%20Bangladeshi%20and%20International%20News%2C%20Latest%20News%2C%20News%20Today&pmd[keywords]=sports%2C%20movies%2C%20web%20series%2C%20drama%2C%20online%20streaming&plt=1742.8999999999942&iss=1&imft=1&tz=0&it=1789523376274&coo=false&cf=1&expv2[0]=pl1&expv2[1]=el2&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct3&expv2[6]=hf1&expv2[7]=sd1&expv2[8]=sp1&expv2[9]=ek1&expv2[10]=pc1&expv2[11]=gs1&expv2[12]=zs1&expv2[13]=cp1&expv2[14]=es1&expv2[15]=ac1&expv2[16]=so1&expv2[17]=wc1&expv2[18]=la1&expv2[19]=sf1&expv2[20]=da1&expv2[21]=io1&expv2[22]=ae1&expv2[23]=sx1&expv2[24]=if1&expv2[25]=fd1&expv2[26]=bg1&expv2[27]=mg1&expv2[28]=kl1&expv2[29]=sg1&expv2[30]=mk1&expv2[31]=sn1&expv2[32]=ec1&expv2[33]=mp1&expv2[34]=ps1&expv2[35]=fx1&expv2[36]=vt1&expv2[37]=dp1&expv2[38]=fw1&expv2[39]=cn1&expv2[40]=tz1&expv2[41]=pe1&expv2[42]=ee1&expv2[43]=bu1&expv2[44]=ta1&expv2[45]=ot1&rqm=GET",
+      "url": "https://www.facebook.com/tr/?id=1059227357980993&ev=PageView&dl=https%3A%2F%2Ftoffeelive.com%2Fen%2Fwatch%2FXi_Ga5oBNnOkwJLWkhKP&rl=https%3A%2F%2Ftoffeelive.com%2F&if=false&ts=1789541611271&iw=false&sw=1920&sh=1080&v=2.9.401&r=stable&ec=0&o=12318&aems=0%3B0&fbp=fb.1.1789541611259.44335794897207424&eid=ob3_plugin-set_111cba28929f22345972320f26eb9b4fbce8e97111d8a1d2fb26d43a23c693b7&cs_est=true&pmd[title]=Somoy%20TV&pmd[locale]=en&pmd[description]=Somoy%20TV%2C%20Bangladeshi%20and%20International%20News%2C%20Latest%20News%2C%20News%20Today&pmd[keywords]=sports%2C%20movies%2C%20web%20series%2C%20drama%2C%20online%20streaming&plt=2330.4000000000015&iss=1&imft=1&tz=0&it=1789541611095&coo=false&cf=1&exp=s1&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct3&expv2[6]=hf1&expv2[7]=sd1&expv2[8]=sp1&expv2[9]=ek1&expv2[10]=pc1&expv2[11]=gs1&expv2[12]=zs1&expv2[13]=cp1&expv2[14]=es1&expv2[15]=ac1&expv2[16]=so1&expv2[17]=wc1&expv2[18]=la1&expv2[19]=sf1&expv2[20]=da1&expv2[21]=io1&expv2[22]=ae1&expv2[23]=sx1&expv2[24]=if1&expv2[25]=fd1&expv2[26]=bg1&expv2[27]=mg1&expv2[28]=kl1&expv2[29]=sg1&expv2[30]=mk1&expv2[31]=sn1&expv2[32]=ec1&expv2[33]=mp1&expv2[34]=ps1&expv2[35]=fx1&expv2[36]=vt1&expv2[37]=dp1&expv2[38]=fw1&expv2[39]=cn1&expv2[40]=tz1&expv2[41]=pe1&expv2[42]=ee1&expv2[43]=bu1&expv2[44]=ta1&expv2[45]=ot0&rqm=GET",
       "status": 200,
-      "set_cookie": "",
-      "timestamp": "2026-09-16T01:49:38.477743",
+      "set_cookie": "fr=0u5p0GwCR8rtirRhO..Bqqjzr...1.0.Bqqjzr.AWfEA4DCcSdJEX9B_GbUA1i39Ag; expires=Tuesday, 15-Dec-2026 06:53:31 GMT; path=/; domain=.facebook.com; SameSite=None; HttpOnly; secure",
+      "timestamp": "2026-09-16T06:53:31.358510",
       "all_headers": {
         "access-control-allow-credentials": "true",
         "access-control-allow-origin": "https://toffeelive.com",
@@ -238,11 +219,30 @@
         "content-length": "0",
         "content-type": "text/plain",
         "cross-origin-resource-policy": "cross-origin",
-        "date": "Wed, 16 Sep 2026 01:49:38 GMT",
+        "date": "Wed, 16 Sep 2026 06:53:31 GMT",
+        "server": "proxygen-bolt",
+        "set-cookie": "fr=0u5p0GwCR8rtirRhO..Bqqjzr...1.0.Bqqjzr.AWfEA4DCcSdJEX9B_GbUA1i39Ag; expires=Tuesday, 15-Dec-2026 06:53:31 GMT; path=/; domain=.facebook.com; SameSite=None; HttpOnly; secure",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "x-fb-connection-quality": "EXCELLENT; q=0.9, rtt=15, rtx=0, c=10, mss=1380, tbw=4545, tp=-1, tpl=-1, uplat=0, ullat=0"
+      }
+    },
+    {
+      "url": "https://www.facebook.com/tr/?id=1059227357980993&ev=page_viewed&dl=https%3A%2F%2Ftoffeelive.com%2Fen%2Fwatch%2FXi_Ga5oBNnOkwJLWkhKP&rl=https%3A%2F%2Ftoffeelive.com%2F&if=false&ts=1789541613762&iw=false&cd[provider_id]=toffee&cd[app_name]=toffee-web-app&cd[app_version]=5.1.0&cd[device_id]=c2e5a77d-6477-4cef-a11f-0414b0e15cf6&cd[subscriber_type]=ANONYMOUS&cd[connection]=cellular&cd[page_name]=Watch%20Details&cd[page_title]=Somoy%20TV&cd[page_path]=%2Fwatch%2FXi_Ga5oBNnOkwJLWkhKP&cd[page_url]=https%3A%2F%2Ftoffeelive.com%2Fwatch%2FXi_Ga5oBNnOkwJLWkhKP&cd[language]=en&cd[referrer]=https%3A%2F%2Ftoffeelive.com%2F&cd[page_id]=Xi_Ga5oBNnOkwJLWkhKP&sw=1920&sh=1080&v=2.9.401&r=stable&ec=1&o=12318&aems=0%3B0&fbp=fb.1.1789541611259.44335794897207424&eid=ob3_plugin-set_feb0d4ed428af06eb3e80d26dd44c1f4639cf0a26dceba9dd0627db2a62b891f&pmd[locale]=en&pmd[description]=Somoy%20TV%2C%20Bangladeshi%20and%20International%20News%2C%20Latest%20News%2C%20News%20Today&pmd[keywords]=sports%2C%20movies%2C%20web%20series%2C%20drama%2C%20online%20streaming&plt=2330.4000000000015&iss=1&imft=1&tz=0&it=1789541611095&coo=false&cf=1&exp=s1&expv2[0]=pl1&expv2[1]=el3&expv2[2]=bc1&expv2[3]=ra2&expv2[4]=rp2&expv2[5]=ct3&expv2[6]=hf1&expv2[7]=sd1&expv2[8]=sp1&expv2[9]=ek1&expv2[10]=pc1&expv2[11]=gs1&expv2[12]=zs1&expv2[13]=cp1&expv2[14]=es1&expv2[15]=ac1&expv2[16]=so1&expv2[17]=wc1&expv2[18]=la1&expv2[19]=sf1&expv2[20]=da1&expv2[21]=io1&expv2[22]=ae1&expv2[23]=sx1&expv2[24]=if1&expv2[25]=fd1&expv2[26]=bg1&expv2[27]=mg1&expv2[28]=kl1&expv2[29]=sg1&expv2[30]=mk1&expv2[31]=sn1&expv2[32]=ec1&expv2[33]=mp1&expv2[34]=ps1&expv2[35]=fx1&expv2[36]=vt1&expv2[37]=dp1&expv2[38]=fw1&expv2[39]=cn1&expv2[40]=tz1&expv2[41]=pe1&expv2[42]=ee1&expv2[43]=bu1&expv2[44]=ta1&expv2[45]=ot0&rqm=GET",
+      "status": 200,
+      "set_cookie": "",
+      "timestamp": "2026-09-16T06:53:33.814993",
+      "all_headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "https://toffeelive.com",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "content-length": "0",
+        "content-type": "text/plain",
+        "cross-origin-resource-policy": "cross-origin",
+        "date": "Wed, 16 Sep 2026 06:53:33 GMT",
         "server": "proxygen-bolt",
         "set-cookie": "",
         "strict-transport-security": "max-age=31536000; includeSubDomains",
-        "x-fb-connection-quality": "EXCELLENT; q=0.9, rtt=21, rtx=0, c=10, mss=1380, tbw=5053, tp=-1, tpl=-1, uplat=0, ullat=0"
+        "x-fb-connection-quality": "EXCELLENT; q=0.9, rtt=20, rtx=0, c=10, mss=1380, tbw=5051, tp=-1, tpl=-1, uplat=0, ullat=0"
       }
     }
   ],
@@ -251,20 +251,20 @@
     "persist:toffee_store": "{\"ui\":\"{\\\"collectionPageTitle\\\":null,\\\"player\\\":{\\\"id\\\":\\\"Xi_Ga5oBNnOkwJLWkhKP\\\",\\\"volume\\\":1,\\\"isMuted\\\":false,\\\"startTime\\\":0,\\\"currentTime\\\":0}}\",\"cart\":\"{\\\"sourceUrl\\\":null,\\\"sourceVideoId\\\":null,\\\"productId\\\":null,\\\"activeScreen\\\":\\\"PLAN\\\",\\\"preLoginScreen\\\":null,\\\"activeTab\\\":\\\"CONTENT_ACCESS\\\",\\\"voucher\\\":null,\\\"selectedPlan\\\":null,\\\"paymentStatus\\\":null}\",\"_persist\":\"{\\\"version\\\":4,\\\"rehydrated\\\":true}\"}",
     "WZRK_TV_CONTROLS": "false",
     "WZRK_APPLICATION_SERVER_KEY_RECIEVED": "true",
-    "_gcl_ls": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"timeouts\":0,\"errors\":0,\"eopCount\":0,\"creationTimeMs\":1789523378800},\"expires\":1797299378800}}",
-    "WZRK_ARP": "%7B%22j_n%22%3A%22Zw%3D%3D%22%2C%22i_n%22%3A%22ZW9nfQIEAwQ%3D%22%2C%22d_ts%22%3A0%2C%22dh%22%3A0%2C%22v%22%3A2%2C%22j_s%22%3A%22%7B%7D%22%2C%22id%22%3A%22R57-668-777Z%22%2C%22r_ts%22%3A1789523377%7D",
-    "WZRK_META": "%7B%22useIP%22%3Atrue%2C%22ps%22%3A1789523377%2C%22cs%22%3A1789523377%2C%22sc%22%3A1%7D",
-    "WZRK_CAMP_G": "%7B%2276a027960ae34e049e359b2f701ad254%22%3A%7B%22woc%22%3A%7B%7D%2C%22wndoc%22%3A%7B%7D%2C%22wi%22%3A%7B%7D%2C%22wp%22%3A%7B%7D%2C%22wsc%22%3A0%2C%22wndsc%22%3A0%7D%7D",
-    "WZRK_EV": "%7B%22wzrk_fetch%22%3A%5B1%2C1789523377%2C1789523377%5D%2C%22page_viewed%22%3A%5B1%2C1789523378%2C1789523378%5D%7D",
+    "_gcl_ls": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"timeouts\":0,\"errors\":0,\"eopCount\":0,\"creationTimeMs\":1789541614139},\"expires\":1797317614139}}",
+    "WZRK_ARP": "%7B%22j_n%22%3A%22Zw%3D%3D%22%2C%22i_n%22%3A%22ZW9newcJAgM%3D%22%2C%22d_ts%22%3A0%2C%22dh%22%3A0%2C%22v%22%3A2%2C%22j_s%22%3A%22%7B%7D%22%2C%22id%22%3A%22R57-668-777Z%22%2C%22r_ts%22%3A1789541612%7D",
+    "WZRK_META": "%7B%22useIP%22%3Atrue%2C%22ps%22%3A1789541612%2C%22cs%22%3A1789541612%2C%22sc%22%3A1%7D",
+    "WZRK_CAMP_G": "%7B%228601acbc4158451c90e80c66609aae97%22%3A%7B%22woc%22%3A%7B%7D%2C%22wndoc%22%3A%7B%7D%2C%22wi%22%3A%7B%7D%2C%22wp%22%3A%7B%7D%2C%22wsc%22%3A0%2C%22wndsc%22%3A0%7D%7D",
+    "WZRK_EV": "%7B%22wzrk_fetch%22%3A%5B1%2C1789541612%2C1789541612%5D%2C%22page_viewed%22%3A%5B1%2C1789541613%2C1789541613%5D%7D",
     "WZRK_BLOCK": "false",
     "WZRK_ACCOUNT_ID": "%22R57-668-777Z%22",
-    "WZRK_G": "%2276a027960ae34e049e359b2f701ad254%22",
+    "WZRK_G": "%228601acbc4158451c90e80c66609aae97%22",
     "__mpq_6019860d585d6c9cc82edba9d456e36c_ev": "[]",
     "WZRK_CAMP": "%7B%22woc%22%3A%7B%7D%2C%22wndoc%22%3A%7B%7D%2C%22wi%22%3A%7B%7D%2C%22wp%22%3A%7B%7D%2C%22wsc%22%3A0%2C%22wndsc%22%3A0%7D"
   },
   "session_storage": {
-    "mp_tab_id_mixpanel_6019860d585d6c9cc82edba9d456e36c": "$tab-1bf5465e-8720-4746-ac7d-c881a886534c",
+    "mp_tab_id_mixpanel_6019860d585d6c9cc82edba9d456e36c": "$tab-c7795d49-1c91-422f-b696-541ac2254801",
     "mp_gen_new_tab_id_mixpanel_6019860d585d6c9cc82edba9d456e36c": "1",
-    "sentryReplaySession": "{\"id\":\"6f7810852a9d47cab8183ca7d3889090\",\"started\":1789523377486,\"lastActivity\":1789523377607,\"segmentId\":0,\"sampled\":\"buffer\",\"dirty\":false}"
+    "sentryReplaySession": "{\"id\":\"e4e58480c6d24578a0d8fd4fd8839db9\",\"started\":1789541612691,\"lastActivity\":1789541612813,\"segmentId\":0,\"sampled\":\"buffer\",\"dirty\":false}"
   }
 }
